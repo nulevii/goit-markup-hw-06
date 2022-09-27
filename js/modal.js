@@ -9,6 +9,18 @@
   refs.closeModalBtn.addEventListener("click", toggleModal);
 
   function toggleModal() {
-    refs.modal.classList.toggle("is-hidden");
+    if (refs.modal.classList.contains("is-hidden")) {
+      setTimeout(() => {
+        refs.modal.classList.toggle("is-hidden");
+      }, 25);
+      refs.modal.classList.toggle("display-none");
+    }
+
+    if (!refs.modal.classList.contains("is-hidden")) {
+      setTimeout(() => {
+        refs.modal.classList.toggle("display-none");
+      }, 250);
+      refs.modal.classList.toggle("is-hidden");
+    }
   }
 })();

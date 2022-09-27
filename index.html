@@ -44,7 +44,7 @@
       </ul>
     </div>
   </header>
-
+  <!-- is-hidden display-none -->
 
   <main class="page-main studio-main">
 
@@ -52,14 +52,43 @@
       <h1 class="order-section-sign">Ефективні рішення для вашого бізнесу</h1>
       <button data-modal-open class="order-section-button" type="button">Замовити послугу</button>
     </section>
-    <div data-modal class="modal-window-container is-hidden">
-      <div  class="modal-window ">
+    <div data-modal class="modal-window-container ">
+      <div class="modal-window ">
         <button type="button" data-modal-close class="modal-window-button">
 
-                        <svg class="figure-svg-image" height="18" width="18">
-                          <use href="./images/icons.svg#modal-close-icon"></use>
-                        </svg>
+          <svg class="figure-svg-image" height="18" width="18">
+            <use href="./images/icons.svg#modal-close-icon"></use>
+          </svg>
         </button>
+        <form class="modal-form">
+          <p class="modal-form-sign">Залиште свої дані, ми вам передзвонимо</p>
+          <label for="modal-form-name" class="modal-form-label">
+            <p class="modal-form-description">Ім'я</p>
+            <svg class="modal-form-image" height="18" width="18">
+              <use href="./images/icons.svg#icon-person"></use>
+            </svg>
+            <input type="text" name="modal-form-name" id="modal-form-name" class="modal-form-name">
+          </label>
+          <label for="modal-form-phone" class="modal-form-label">
+            <p class="modal-form-description">Телефон</p>
+            <svg class="modal-form-image" height="18" width="18">
+              <use href="./images/icons.svg#icon-phone-black"></use>
+            </svg>
+            <input type="tel" name="modal-form-phone" id="modal-form-phone" class="modal-form-phone">
+          </label>
+          <label for="modal-form-email" class="modal-form-label">
+            <p class="modal-form-description">Пошта</p>
+            <svg class="modal-form-image" height="18" width="18">
+              <use href="./images/icons.svg#icon-email-black"></use>
+            </svg>
+            <input type="email" name="modal-form-email" id="modal-form-email" class="modal-form-email">
+          </label>
+          <p class="modal-form-description">Коментар</p>
+          <label for="modal-form-comment" class="modal-form-comment-label">
+            <textarea class="modal-form-comment" name="modal-form-comment" id="modal-form-comment"
+              placeholder="Введіть текст" class="modal-form-comment"></textarea></label>
+        </form>
+
       </div>
     </div>
 
@@ -117,17 +146,17 @@
           <li class="about-us-list-element">
             <img class="about-us-image" src="./images/about_us/about_us_one.jpg" alt="Програмування" height="294"
               width="370">
-              <p class="about-us-text">Десктопні додатки</p>
+            <p class="about-us-text">Десктопні додатки</p>
           </li>
           <li class="about-us-list-element">
             <img class="about-us-image" src="./images/about_us/about_us_two.jpg" alt="Мобільна розробка" height="294"
               width="370">
-              <p class="about-us-text">Мобільні додатки</p>
+            <p class="about-us-text">Мобільні додатки</p>
           </li>
           <li class="about-us-list-element">
             <img class="about-us-image" src="./images/about_us/about_us_three.jpg" alt="Дизайн" height="294"
               width="370">
-              <p class="about-us-text">Дизайнерські рішення</p>
+            <p class="about-us-text">Дизайнерські рішення</p>
           </li>
         </ul>
       </div>
@@ -399,10 +428,26 @@
           </li>
         </ul>
       </div>
+      <div class="footer-mailing">
+        <p class="footer-mailing-sign">Підпишіться на розсилку</p>
+        <form class="footer-mailing-form" action="">
+          <label for="footer-mailing-email" class="footer-mailing-email-label">
+            <input id="footer-mailing-email" class="footer-mailing-email" type="email" placeholder='E-mail'>
+          </label>
+          <label for="footer-mailing-submit">
+            <button id="footer-mailing-submit" class="footer-mailing-submit" type="submit">
+              Підписатися
+              <svg class="footer-send-svg" width="24" height="24">
+                <use href="./images/icons.svg#icon-icon-send"></use>
+              </svg>
+            </button>
+          </label>
+        </form>
+      </div>
     </div>
   </footer>
 
-    <script src="./js/modal.js"></script>
+  <script src="./js/modal.js"></script>
 </body>
 
 </html>
