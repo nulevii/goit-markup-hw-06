@@ -63,30 +63,30 @@
         <form class="modal-form">
           <p class="modal-form-sign">Залиште свої дані, ми вам передзвонимо</p>
           <label for="modal-form-name" class="modal-form-label">
-            <p class="modal-form-description">Ім'я</p>
+            <span class="modal-form-description">Ім'я</span>
             <input type="text" name="modal-form-name" id="modal-form-name" class="modal-form-name">
             <svg class="modal-form-image" height="18" width="18">
               <use href="./images/icons.svg#icon-person"></use>
             </svg>
           </label>
           <label for="modal-form-phone" class="modal-form-label">
-            <p class="modal-form-description">Телефон</p>
+            <span class="modal-form-description">Телефон</span>
             <input type="tel" name="modal-form-phone" id="modal-form-phone" class="modal-form-phone">
             <svg class="modal-form-image" height="18" width="18">
               <use href="./images/icons.svg#icon-phone-black"></use>
             </svg>
           </label>
           <label for="modal-form-email" class="modal-form-label">
-            <p class="modal-form-description">Пошта</p>
+            <span class="modal-form-description">Пошта</span>
             <input type="email" name="modal-form-email" id="modal-form-email" class="modal-form-email">
             <svg class="modal-form-image" height="18" width="18">
               <use href="./images/icons.svg#icon-email-black"></use>
             </svg>
           </label>
-          <p class="modal-form-description">Коментар</p>
+          <span class="modal-form-description">Коментар</span>
           <label for="modal-form-comment" class="modal-form-comment-label">
             <textarea class="modal-form-comment" name="modal-form-comment" id="modal-form-comment"
-              placeholder="Введіть текст" class="modal-form-comment"></textarea>
+              placeholder="Введіть текст"></textarea>
           </label>
           <label for="modal-form-policy-checkbox" class="modal-form-policy-label">
             <input type="checkbox" name="modal-form-policy-checkbox" id="modal-form-policy-checkbox"
@@ -335,6 +335,7 @@
                   </a>
                 </li>
               </ul>
+            </div>
           </li>
         </ul>
       </div>
@@ -446,7 +447,7 @@
       </div>
       <div class="footer-mailing">
         <p class="footer-mailing-sign">Підпишіться на розсилку</p>
-        <form class="footer-mailing-form" action="">
+        <form class="footer-mailing-form">
           <label for="footer-mailing-email" class="footer-mailing-email-label">
             <input id="footer-mailing-email" class="footer-mailing-email" type="email" placeholder='E-mail'>
           </label>
