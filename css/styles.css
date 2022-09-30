@@ -371,7 +371,7 @@ p {
 
 .modal-form-description {
   margin-bottom: 4px;
-
+  display: block;
   font-weight: 400;
   font-size: 12px;
   line-height: calc(14 / 12);
@@ -891,7 +891,7 @@ p {
 }
 
 .footer-mailing {
-  margin-left: 93px;
+  margin-left: auto;
 }
 .footer-mailing-sign {
   margin-bottom: 20px;
