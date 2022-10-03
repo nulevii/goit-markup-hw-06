@@ -12,15 +12,14 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" href="./css/styles.css">
-
+  <link rel="stylesheet" href="./css/main.min.css">
 </head>
 
 <body>
   <header class="page-header">
     <div class="container page-header__container">
       <nav class="navigation">
-        <a class="logo" href="./index.html"> <span>Web</span>Studio</a>
+        <a class="logo" href="./index.html"> <span class="logo__first-word">Web</span>Studio</a>
         <ul class="navigation-list">
           <li><a class="navigation-list__link navigation-list__link--selected" href="./index.html">Студія</a></li>
           <li><a class="navigation-list__link" href="./portfolio.html">Портфоліо</a></li>
@@ -348,46 +347,46 @@
 
     <section class="our-clients-section section">
       <div class="container">
-        <h2 class="our-clients-sign">Постійні клієнти</h2>
-        <ul class="our-client-list">
-          <li class="our-client-element">
-            <a href="" class="our-client-link">
-              <svg class="our-client-image" width="41" height="46.7">
+        <h2 class="section-caption">Постійні клієнти</h2>
+        <ul class="our-clients-list">
+          <li class="our-clients-element">
+            <a href="" class="our-clients-element__link">
+              <svg class="our-clients-element__image" width="41" height="46.7">
                 <use href="./images/icons.svg#icon-logo1"></use>
               </svg>
             </a>
           </li>
-          <li class="our-client-element">
-            <a href="" class="our-client-link">
-              <svg class="our-client-image" width="40" height="52">
+          <li class="our-clients-element">
+            <a href="" class="our-clients-element__link">
+              <svg class="our-clients-element__image" width="40" height="52">
                 <use href="./images/icons.svg#icon-logo2"></use>
               </svg>
             </a>
           </li>
-          <li class="our-client-element">
-            <a href="" class="our-client-link">
-              <svg class="our-client-image" width="43.46" height="41.18">
+          <li class="our-clients-element">
+            <a href="" class="our-clients-element__link">
+              <svg class="our-clients-element__image" width="43.46" height="41.18">
                 <use href="./images/icons.svg#icon-logo3"></use>
               </svg>
             </a>
           </li>
-          <li class="our-client-element">
-            <a href="" class="our-client-link">
-              <svg class="our-client-image" width="84.44" height="40.62">
+          <li class="our-clients-element">
+            <a href="" class="our-clients-element__link">
+              <svg class="our-clients-element__image" width="84.44" height="40.62">
                 <use href="./images/icons.svg#icon-logo4"></use>
               </svg>
             </a>
           </li>
-          <li class="our-client-element">
-            <a href="" class="our-client-link">
-              <svg class="our-client-image" width="62.54" height="45.53">
+          <li class="our-clients-element">
+            <a href="" class="our-clients-element__link">
+              <svg class="our-clients-element__image" width="62.54" height="45.53">
                 <use href="./images/icons.svg#icon-logo5"></use>
               </svg>
             </a>
           </li>
-          <li class="our-client-element">
-            <a href="" class="our-client-link">
-              <svg class="our-client-image" width="93.79" height="43.93">
+          <li class="our-clients-element">
+            <a href="" class="our-clients-element__link">
+              <svg class="our-clients-element__image" width="93.79" height="43.93">
                 <use href="./images/icons.svg#icon-logo6"></use>
               </svg>
             </a>
@@ -400,24 +399,24 @@
 
 
   <footer class="page-footer">
-    <div class="container footer-container">
+    <div class="container page-footer__container">
       <div class="footer-contacts">
-        <a class="logo logo--white" href="./index.html"><span>Web</span>Studio</a>
-        <address class="footer-contacts">
-          <ul class="footer-contact-list">
-            <li class="footer-adress">м. Київ, пр-т Лесі Українки, 26
+        <a class="logo logo--white" href="./index.html"><span class="logo__first-word">Web</span>Studio</a>
+        <address class="adress-info">
+          <ul class="adress-info__element">
+            <li class="adress-info__adress">м. Київ, пр-т Лесі Українки, 26
             </li>
             <li>
-              <a class="footer-contact-element" href="mailto:info@devstudio.com">info@devstudio.com</a>
+              <a class="adress-info__contact" href="mailto:info@devstudio.com">info@devstudio.com</a>
             </li>
             <li>
-              <a class="footer-contact-element" href="tel:+38-096-111-11-11">+38 096 111 11 11</a>
+              <a class="adress-info__contact" href="tel:+38-096-111-11-11">+38 096 111 11 11</a>
             </li>
           </ul>
         </address>
       </div>
       <div class="footer-social">
-        <p class="footer-social-sign">приєднуйтесь</p>
+        <p class="footer-social__caption">приєднуйтесь</p>
         <ul class="social-media social-media-footer">
           <li class="social-media__item social-media__item-footer">
             <a href="" class="social-media__link social-media__link-footer">
@@ -450,15 +449,15 @@
         </ul>
       </div>
       <div class="footer-mailing">
-        <p class="footer-mailing-sign">Підпишіться на розсилку</p>
-        <form class="footer-mailing-form">
-          <label for="footer-mailing-email" class="footer-mailing-email-label">
-            <input required id="footer-mailing-email" class="footer-mailing-email" type="email" placeholder='E-mail'>
+        <p class="footer-mailing__caption">Підпишіться на розсилку</p>
+        <form class="footer-mailing__form">
+          <label for="footer-mailing__email" class="footer-mailing__email-label">
+            <input required id="footer-mailing__email" class="footer-mailing__email" type="email" placeholder='E-mail'>
           </label>
 
-          <button id="footer-mailing-submit" class="footer-mailing-submit" type="submit">
+          <button id="footer-mailing__submit-button" class="submit-button footer-mailing__submit-button" type="submit">
             Підписатися
-            <svg class="footer-send-svg" width="24" height="24">
+            <svg class="submit-button__svg" width="24" height="24">
               <use href="./images/icons.svg#icon-icon-send"></use>
             </svg>
           </button>
